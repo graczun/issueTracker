@@ -12,6 +12,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.EntityNotFoundException;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -28,7 +29,8 @@ public class ProjectService {
 
     public int countIssuesOfProject(Integer projectId) {
         Optional<Project> projectOptional = projectRepository.findById(projectId);
-        return projectOptional.map(project -> project.getIssueList().size()).orElse(0);
+        return projectOptional.map(project -> project.getIssueList().size()).orElseThrow(() -> new EntityNotFoundException(
+                String.format("Project with id [%d] not found", projectId)));
     }
 
     public void createProject(ProjectDTO projectDTO) {
