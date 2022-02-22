@@ -1,5 +1,6 @@
 package com.jjdevelopment.issueTracker.service;
 
+import com.jjdevelopment.issueTracker.aspect.logging.Loggable;
 import com.jjdevelopment.issueTracker.dto.IssueDTO;
 import com.jjdevelopment.issueTracker.model.Issue;
 import com.jjdevelopment.issueTracker.repository.IssueRepository;
@@ -13,6 +14,7 @@ import javax.persistence.EntityNotFoundException;
 
 
 @Service
+@Loggable
 @Transactional
 @RequiredArgsConstructor
 public class IssueService {

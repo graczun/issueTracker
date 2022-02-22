@@ -2,12 +2,11 @@ Sample Spring - rest application
 
 TODO:
 1. Security
-2. Something AOP
-3. Redis cache
-4. Hibernate tricks
-5. Quartz
-6. Exception mapping
-7. Docker file
-8. GUI
-9. Another Microservice with some functionalities
-10. Messaging
+2. Redis cache
+3. Hibernate tricks
+4. Quartz
+5. Exception mapping
+6. Docker file
+7. GUI
+8. Another Microservice with some functionalities
+9. Messaging

@@ -1,5 +1,6 @@
 package com.jjdevelopment.issueTracker.service;
 
+import com.jjdevelopment.issueTracker.aspect.logging.Loggable;
 import com.jjdevelopment.issueTracker.dto.IssueDTO;
 import com.jjdevelopment.issueTracker.dto.ProjectDTO;
 import com.jjdevelopment.issueTracker.model.Project;
@@ -19,6 +20,7 @@ import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
 @Service
+@Loggable
 @Transactional
 @RequiredArgsConstructor
 public class ProjectService {
