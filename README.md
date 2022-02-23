@@ -1,11 +1,12 @@
 Sample Spring - rest application
 
 TODO:
-1. Redis cache
-2. Hibernate tricks
-3. Quartz
-4. Exception mapping
-5. Docker file
-6. GUI
-7. Another Microservice with some functionalities
-8. Messaging
+1. JWT
+2. Own validator
+3. Redis cache
+4. Hibernate tricks
+5. Quartz
+6. Exception mapping
+7. Docker file
+8. Another Microservice with some functionalities
+9. Messaging
